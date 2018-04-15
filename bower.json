@@ -1,0 +1,17 @@
+{
+  "name": "nodejs_movie",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "chencl1986 <chencl1986@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/chencl1986/nodejs_movie",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
