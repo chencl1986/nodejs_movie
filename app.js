@@ -1,19 +1,13 @@
-var express = require('express')
+ var express = require('express')
 var port = process.env.PORT || 3000
 var app = express()
 
-app.set('views', './views')
+app.set('views', './views/pages')
 app.set('view engine', 'jade')
 app.listen(port)
 
 console.log('movie started on port ' + port);
 
-// index page
-app.get('/', function (req, res) {
-  res.render('index', {
-    title: 'imooc 首页'
-  })
-})
 // index page
 app.get('/', function (req, res) {
   res.render('index', {
