@@ -1,7 +1,15 @@
-doctype
-html
-  head
-    meta(charset="utf-8")
-    title #{title}
-  body
-    h1 #{title}
+extends ../layout.jade
+
+block content
+  .container
+    .row
+      each item in movies
+        .col-md-2
+          .thumbnail
+            a(href="/movie/#{item._id}", title="title")
+              img(src="#{item.poster}", alt="#{item.title}", srcset="")
+            .caption
+              h3 #{item.title}
+              p: a(href="/movie/#{item._id}", title="title", role="button").btn.btn-primary
+                观看预告片
+
